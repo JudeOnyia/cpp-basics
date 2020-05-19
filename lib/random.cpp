@@ -1,4 +1,4 @@
-#include "random.hpp"
+#include "ra/random.hpp"
 
 namespace ra::random {
 class linear_congruential_generator {
@@ -11,7 +11,7 @@ class linear_congruential_generator {
 			a_ = a;
 			c_ = c;
 			m_ = m;
-			if( (c_ % m_)==0 && (s % m_)==0 ) x_ = 1;
+			if( (c_ % m_)==(int_type)0 && (s % m_)==(int_type)0 ) x_ = (int_type)1;
 			else x_ = s;
 		}
 
@@ -22,9 +22,9 @@ class linear_congruential_generator {
 
 		// Function to restarts the sequence generation process with a new seed value
 		void seed(int_type s){
-			if( (c_ % m_)==0 && (s % m_)==0 ) x_ = 1;
+			if( (c_ % m_)==(int_type)0 && (s % m_)==(int_type)0 ) x_ = (int_type)1;
 			else x_ = s;
-			n_ = 0;
+			n_ = (unsigned long long)0;
 		}
 
 		// Operator to advance the generator to the next position in the sequence
@@ -43,8 +43,8 @@ class linear_congruential_generator {
 			n_ = n;
 		}
 
-		int_type min(){ return c_==0? 1 : 0; } // Function to get the smallest value 
-		int_type max(){ return m-1; } // Funtion to get the largest value in sequence
+		int_type min(){ return c_==(int_type)0? (int_type)1 : (int_type)0; } // Function to get the smallest value 
+		int_type max(){ return m-(int_type)1; } // Funtion to get the largest value in sequence
 		
 		// Operator to test two linear_congruential_generator objects for equality
 		bool operator==(const linear_congruential_generator& objA, const linear_congruential_generator& objB){
@@ -64,7 +64,7 @@ class linear_congruential_generator {
 		int_type c_; // increment
 		int_type m_; // modulus
 		int_type x_; // current position in the generated sequence
-		unsigned long long n_ = 0; // number of positions to discard in the sequence
+		unsigned long long n_ = (unsigned long long)0; // number of positions to discard in the sequence
 }
 
 // Stream inserter
