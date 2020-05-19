@@ -1,3 +1,4 @@
+#include <iostream>
 namespace ra::random{
 	class linear_congruential_generator {
 	public:
@@ -23,16 +24,16 @@ namespace ra::random{
 		void discard(unsigned long long n){ n_ = n; }
 
 		int_type min(){ return c_==(int_type)0? (int_type)1 : (int_type)0; } // Function to get the smallest value 
-		int_type max(){ return m-(int_type)1; } // Funtion to get the largest value in sequence
+		int_type max(){ return m_-(int_type)1; } // Funtion to get the largest value in sequence
 		
 		// Operator to test two linear_congruential_generator objects for equality
-		bool operator==(const linear_congruential_generator& objA, const linear_congruential_generator& objB){
-			return (objA.a_==objB.a_ && objA.c_==objB.c_ && objA.m_==objB.m_ && objA.x_==objB.x_);
+		bool operator==(const linear_congruential_generator& obj){
+			return (obj.a_==this->a_ && obj.c_==this->c_ && obj.m_==this->m_ && obj.x_==this->x_);
 		}
 
 		// Operator to test two linear_congruential_generator objects for inequality
-		bool operator!=(const linear_congruential_generator& objA, const linear_congruential_generator& objB){
-		        return !(objA.a_==objB.a_ && objA.c_==objB.c_ && objA.m_==objB.m_ && objA.x_==objB.x_);
+		bool operator!=(const linear_congruential_generator& obj){
+		        return !(obj.a_==this->a_ && obj.c_==this->c_ && obj.m_==this->m_ && obj.x_==this->x_);
 		}
 
 
@@ -42,7 +43,7 @@ namespace ra::random{
 		int_type m_; // modulus
 		int_type x_; // current position in the generated sequence
 		unsigned long long n_ = (unsigned long long)0; // number of positions to discard in the sequence
-	}
+	};
 
 	// Stream inserter
 	std::ostream& operator<<(std::ostream& outStream, const linear_congruential_generator& objA);
