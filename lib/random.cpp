@@ -13,7 +13,7 @@ namespace ra::random {
 		}
 
 		// Function to restarts the sequence generation process with a new seed value
-		linear_congruential_generator::void seed(int_type s){
+		void linear_congruential_generator::seed(int_type s){
 			if( (c_ % m_)==(int_type)0 && (s % m_)==(int_type)0 ) x_ = (int_type)1;
 			else x_ = s;
 			n_ = (unsigned long long)0;
@@ -21,7 +21,7 @@ namespace ra::random {
 
 		// Operator to advance the generator to the next position in the sequence
 		// with consideration to the number of positions to be discarded
-		linear_congruential_generator::int_type operator()(){
+		int_type linear_congruential_generator::operator()(){
 			++n_;
 			do{
 				x_ = (a_ * x_ + c_) % m_;
