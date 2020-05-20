@@ -22,5 +22,11 @@ namespace ra::random {
 			return x_;
 		}
 
+		// Stream inserter
+		std::ostream& operator<<(std::ostream& outStream, linear_congruential_generator& objA){
+			outStream << objA.multiplier() << " " << objA.increment() << " " << objA.modulus() << " " << objA.position();
+			return outStream;
+		}
+
 		
 }

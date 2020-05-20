@@ -1,3 +1,5 @@
+#ifndef random_hpp
+#define random_hpp
 #include <iostream>
 namespace ra::random{
 	class linear_congruential_generator {
@@ -52,8 +54,6 @@ namespace ra::random{
 	};
 
 	// Stream inserter
-	std::ostream& operator<<(std::ostream& outStream, const linear_congruential_generator& objA){
-		outStream << objA.multiplier() << " " << objA.increment() << " " << objA.modulus() << " " << objA.position();
-		return outStream;
-	}
+	std::ostream& operator<<(std::ostream& outStream, linear_congruential_generator& objA);
 }
+#endif
