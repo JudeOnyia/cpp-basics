@@ -6,7 +6,13 @@ namespace ra::random{
 		static int_type default_seed(){ return (int_type)1;} // Function to return default seed of one for all objects
 		
 		// Constructor that initializes the multiplier, increment and modulus. Seed is optional argument.
-		linear_congruential_generator(int_type a, int_type c, int_type m, int_type s = default_seed());
+		linear_congruential_generator(int_type a, int_type c, int_type m, int_type s = default_seed()){
+			a_ = a;
+			c_ = c;
+			m_ = m;
+			if( (c_ % m_)==(int_type)0 && (s % m_)==(int_type)0 ) x_ = (int_type)1;
+			else x_ = s;
+		}
 
 		int_type multiplier(){ return a_;} // Function to return multiplier value
 		int_type increment(){ return c_;} // Function to return increment value
@@ -46,5 +52,8 @@ namespace ra::random{
 	};
 
 	// Stream inserter
-	std::ostream& operator<<(std::ostream& outStream, const linear_congruential_generator& objA);
+	std::ostream& operator<<(std::ostream& outStream, const linear_congruential_generator& objA){
+		outStream << objA.multiplier() << " " << objA.increment() << " " << objA.modulus() << " " << objA.position();
+		return outStream;
+	}
 }

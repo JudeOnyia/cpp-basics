@@ -2,15 +2,7 @@
 #include "ra/random.hpp"
 
 namespace ra::random {
-
-		// Constructor that initializes the multiplier, increment and modulus. Seed is optional argument.
-		linear_congruential_generator::linear_congruential_generator(int_type a, int_type c, int_type m, int_type s = default_seed()){
-			a_ = a;
-			c_ = c;
-			m_ = m;
-			if( (c_ % m_)==(int_type)0 && (s % m_)==(int_type)0 ) x_ = (int_type)1;
-			else x_ = s;
-		}
+		typedef linear_congruential_generator::int_type int_type;
 
 		// Function to restarts the sequence generation process with a new seed value
 		void linear_congruential_generator::seed(int_type s){
@@ -30,9 +22,5 @@ namespace ra::random {
 			return x_;
 		}
 
-		// Stream inserter
-		std::ostream& operator<<(std::ostream& outStream, const linear_congruential_generator& objA){
-			outStream << objA.multiplier() << " " << objA.increment() << " " << objA.modulus() << " " << objA.position();
-			return outStream;
-		}
+		
 }
