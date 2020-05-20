@@ -3,6 +3,15 @@
 
 namespace ra::random {
 		typedef linear_congruential_generator::int_type int_type;
+		
+		// Constructor that initializes the multiplier, increment and modulus. Seed is optional argument.
+		linear_congruential_generator::linear_congruential_generator(int_type a, int_type c, int_type m, int_type s){
+			a_ = a;
+			c_ = c;
+			m_ = m;
+			if( (c_ % m_)==(int_type)0 && (s % m_)==(int_type)0 ) x_ = (int_type)1;
+			else x_ = s;
+		}
 
 		// Function to restarts the sequence generation process with a new seed value
 		void linear_congruential_generator::seed(int_type s){
