@@ -50,6 +50,7 @@ int main(){
 	ra::random::linear_congruential_generator obj_mine_D(20,0,300,0);
 	cout << "lc generator seed (Must be 1): " << obj_mine_D << endl;
 	
+	return 0;
 
 
 
