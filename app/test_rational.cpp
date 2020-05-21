@@ -15,7 +15,7 @@ int main(){
 	cout << "   Numerator: " << obj_B.numerator() << endl;
 	cout << "   Denominator: " << obj_B.denominator() << endl << endl;
 
-	ra::math::rational<int> obj_C(31488,-117);
+	ra::math::rational<int> obj_C(31488,117);
 	cout << "3) Test constructor with double parameter and trunction function" << endl;
 	cout << "   Numerator: " << obj_C.numerator() << endl;
 	cout << "   Denominator: " << obj_C.denominator() << endl;
@@ -37,7 +37,7 @@ int main(){
 	cout << "   Numerator: " << obj_D.numerator() << endl;
 	cout << "   Not(!) operator: " << !obj_D << endl << endl;
 
-	ra::math::rational<int> obj_F(48,-4);
+	ra::math::rational<int> obj_F(-12);
 	cout << "6) Test Equality(==) operator" << endl;
 	cout << "   Must be true: " << (obj_D==obj_F) << endl;
 	cout << "   Must be false: " << (obj_F==obj_C) << endl << endl;
@@ -45,6 +45,26 @@ int main(){
 	cout << "7) Test Inequality(!=) operator" << endl;
 	cout << "   Must be true: " << (obj_C!=obj_F) << endl;
 	cout << "   Must be false: " << (obj_F!=obj_D) << endl << endl;
+
+	cout << "8) Test Less than(<) operator" << endl;
+	cout << "   Must be true: " << (obj_F<obj_C) << endl;
+	cout << "   Must be false: " << (obj_E<obj_F) << endl;
+	cout << "   Must be false: " << (obj_F<obj_D) << endl << endl;
+
+	cout << "9) Test Greater than(>) operator" << endl;
+	cout << "   Must be false: " << (obj_F>obj_C) << endl;
+	cout << "   Must be true: " << (obj_E>obj_F) << endl;
+	cout << "   Must be false: " << (obj_F>obj_D) << endl << endl;
+
+	cout << "10) Test Less than or equals to(<=) operator" << endl;
+	cout << "    Must be true: " << (obj_F<=obj_C) << endl;
+	cout << "    Must be false: " << (obj_E<=obj_F) << endl;
+	cout << "    Must be true: " << (obj_F<=obj_D) << endl << endl;
+
+	cout << "11) Test Greater than or equals to(>=) operator" << endl;
+	cout << "    Must be false: " << (obj_F>=obj_C) << endl;
+	cout << "    Must be true: " << (obj_E>=obj_F) << endl;
+	cout << "    Must be true: " << (obj_F>=obj_D) << endl << endl;
 
 	
 

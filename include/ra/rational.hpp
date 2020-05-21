@@ -73,6 +73,26 @@ class rational {
 		bool operator!=(rational& obj){
 			return ( (n_/d_) != (obj.numerator()/obj.denominator()) );
 		}
+
+		// Operator to check less than of rational numbers (<)
+		bool operator<(rational& obj){
+			return ( (n_/d_) < (obj.numerator()/obj.denominator()) );
+		}
+
+		// Operator to check greater than of rational numbers (>)
+		bool operator>(rational& obj){
+			return ( (n_/d_) > (obj.numerator()/obj.denominator()) );
+		}
+
+		// Operator to check less than or equals to of rational numbers (<=)
+		bool operator<=(rational& obj){
+			return ( (n_/d_) <= (obj.numerator()/obj.denominator()) );
+		}
+
+		// Operator to check greater than or equals to of rational numbers (>=)
+		bool operator>=(rational& obj){
+			return ( (n_/d_) >= (obj.numerator()/obj.denominator()) );
+		}
 	
 	private:
 		int_type n_; // Numerator
