@@ -51,7 +51,12 @@ class rational {
 
 		// Function for rounding the rational number towards zero (discard fractional part)
 		int_type truncate(){
-			return ( (n_/d_) - ((long long)n_%(long long)d_)/d_ );
+			return (int_type)( (n_/d_) - ((long long)n_%(long long)d_)/d_ );
+		}
+
+		// Function to check if rational number is an integer
+		bool is_integer(){
+			return ( ((long long)n_%(long long)d_)==(long long)0 )? true : false; 
 		}
 	
 	private:

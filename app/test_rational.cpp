@@ -21,6 +21,15 @@ int main(){
 	cout << "   Denominator: " << obj_C.denominator() << endl;
 	cout << "   Truncated value: " << obj_C.truncate() << endl << endl;
 
+	ra::math::rational<int> obj_D(48,4);
+	cout << "4) Test is_integer function" << endl;
+	cout << "   Numerator: " << obj_D.numerator() << endl;
+	cout << "   Denominator: " << obj_D.denominator() << endl;
+	cout << "   is_integer: " << obj_D.is_integer() << endl;
+	cout << "   Numerator: " << obj_C.numerator() << endl;
+	cout << "   Denominator: " << obj_C.denominator() << endl;
+	cout << "   is_integer: " << obj_C.is_integer() << endl << endl;
+
 	
 
 	return 0;
