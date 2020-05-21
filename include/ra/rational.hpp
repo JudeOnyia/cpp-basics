@@ -48,6 +48,11 @@ class rational {
 			// FIGURE OUT THE MATH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			return *this;
 		}
+
+		// Function for rounding the rational number towards zero (discard fractional part)
+		int_type truncate(){
+			return ( (n_/d_) - ((long long)n_%(long long)d_)/d_ );
+		}
 	
 	private:
 		int_type n_; // Numerator
