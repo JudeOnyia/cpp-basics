@@ -21,7 +21,7 @@ int main(){
 	cout << "   Denominator: " << obj_C.denominator() << endl;
 	cout << "   Truncated value: " << obj_C.truncate() << endl << endl;
 
-	ra::math::rational<int> obj_D(48,4);
+	ra::math::rational<int> obj_D(48,-4);
 	cout << "4) Test is_integer function" << endl;
 	cout << "   Numerator: " << obj_D.numerator() << endl;
 	cout << "   Denominator: " << obj_D.denominator() << endl;
@@ -29,6 +29,13 @@ int main(){
 	cout << "   Numerator: " << obj_C.numerator() << endl;
 	cout << "   Denominator: " << obj_C.denominator() << endl;
 	cout << "   is_integer: " << obj_C.is_integer() << endl << endl;
+
+	ra::math::rational<int> obj_E(0,-4);
+	cout << "5) Test the Not(!) operator" << endl;
+	cout << "   Numerator: " << obj_E.numerator() << endl;
+	cout << "   Not(!) operator: " << !obj_E << endl;
+	cout << "   Numerator: " << obj_D.numerator() << endl;
+	cout << "   Not(!) operator: " << !obj_D << endl;
 
 	
 

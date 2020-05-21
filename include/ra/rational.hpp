@@ -58,6 +58,11 @@ class rational {
 		bool is_integer(){
 			return ( ((long long)n_%(long long)d_)==(long long)0 )? true : false; 
 		}
+
+		// Operator to check if a rational number is zero
+		bool operator!(){
+			return (n_==(int_type)0) ? true : false;
+		}
 	
 	private:
 		int_type n_; // Numerator
