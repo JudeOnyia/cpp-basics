@@ -60,7 +60,7 @@ class rational {
 
 		// Function for rounding the rational number towards zero (discard fractional part)
 		int_type truncate(){
-			return (int_type)( (n_/d_) - ((long long)n_%(long long)d_)/d_ );
+			return (int_type)((long long)(n_ / d_));
 		}
 
 		// Function to check if rational number is an integer
@@ -103,10 +103,23 @@ class rational {
 			return ( (n_/d_) >= (obj.numerator()/obj.denominator()) );
 		}
 
-		// Operator to perform prefix and postfix increment (++)
-		//rational& operator++(){
+		// Operator to perform prefix increment (++obj)
+		rational& operator++(){
+			n_ = n_ + d_;
+			return *this;
+		}
+
+		// Operator to perform prefix and decrement (--obj)
+		rational& operator--(){
+			n_ = n_ - d_;
+			return *this;
+		}
+
+		// Operator to perform postfix increment (obj++)
+		//rational operator++(int){
+			//rational<int_type> obj_copy(n_,d_);
 			//n_ = n_ + d_;
-			//return
+			//return obj_copy;
 		//}
 	
 	private:

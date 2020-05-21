@@ -15,13 +15,13 @@ int main(){
 	cout << "   Numerator: " << obj_B.numerator() << endl;
 	cout << "   Denominator: " << obj_B.denominator() << endl << endl;
 
-	ra::math::rational<int> obj_C(31488,117);
+	ra::math::rational<double> obj_C(31488,117);
 	cout << "3) Test constructor with double parameter and trunction function" << endl;
 	cout << "   Numerator: " << obj_C.numerator() << endl;
 	cout << "   Denominator: " << obj_C.denominator() << endl;
 	cout << "   Truncated value: " << obj_C.truncate() << endl << endl;
 
-	ra::math::rational<int> obj_D(48,-4);
+	ra::math::rational<double> obj_D(48,-4);
 	cout << "4) Test is_integer function" << endl;
 	cout << "   Numerator: " << obj_D.numerator() << endl;
 	cout << "   Denominator: " << obj_D.denominator() << endl;
@@ -30,14 +30,14 @@ int main(){
 	cout << "   Denominator: " << obj_C.denominator() << endl;
 	cout << "   is_integer: " << obj_C.is_integer() << endl << endl;
 
-	ra::math::rational<int> obj_E(0,-4);
+	ra::math::rational<double> obj_E(0,-4);
 	cout << "5) Test the Not(!) operator" << endl;
 	cout << "   Numerator: " << obj_E.numerator() << endl;
 	cout << "   Not(!) operator: " << !obj_E << endl;
 	cout << "   Numerator: " << obj_D.numerator() << endl;
 	cout << "   Not(!) operator: " << !obj_D << endl << endl;
 
-	ra::math::rational<int> obj_F(-12);
+	ra::math::rational<double> obj_F(-12);
 	cout << "6) Test Equality(==) operator" << endl;
 	cout << "   Must be true: " << (obj_D==obj_F) << endl;
 	cout << "   Must be false: " << (obj_F==obj_C) << endl << endl;
@@ -74,6 +74,10 @@ int main(){
 	ra::math::rational<double> obj_G(-9,0);
 	cout << "    obj_G(-9,0): " << obj_G.numerator() << ", " << obj_G.denominator() << endl << endl;
 
+	cout << "14) Test Prefix Increment(++obj) and Decrement(--obj) operators" << endl;
+	cout << "    obj_D: " << obj_D.numerator() << ", " << obj_D.denominator() << endl;
+	cout << "    increment: " << (++obj_D).numerator() << ", " << obj_D.denominator() << endl;
+	cout << "    decrement: " << (--obj_D).numerator() << ", " << obj_D.denominator() << endl;
 	
 
 	return 0;
