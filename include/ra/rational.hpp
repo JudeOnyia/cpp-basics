@@ -1,5 +1,6 @@
 #ifndef rational_hpp
 #define rational_hpp
+#include <algorithm>
 namespace ra::math{
 template<class T>
 class rational {
@@ -20,6 +21,13 @@ class rational {
 				// ZERO CONDITION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			}
 			else { d_ = d; }
+
+			// Reduced form
+			long long the_gcd = std::__gcd((long long)n_,(long long)d_);
+			n_ = n_ / (int_type)the_gcd;
+			d_ = d_ / (int_type)the_gcd;
+			// If denominator is negative
+			if(d_ < (int_type)0) { d_ = d_ * (int_type)(-1); n_ = n_ * (int_type)(-1); }
 		}
 
 		int_type numerator(){ return n_; } // Function to return the numerator value
@@ -56,7 +64,7 @@ class rational {
 
 		// Function to check if rational number is an integer
 		bool is_integer(){
-			return ( ((long long)n_%(long long)d_)==(long long)0 ); 
+			return ( d_==(int_type)1 ); 
 		}
 
 		// Operator to check if a rational number is zero (!)
@@ -93,6 +101,12 @@ class rational {
 		bool operator>=(rational& obj){
 			return ( (n_/d_) >= (obj.numerator()/obj.denominator()) );
 		}
+
+		// Operator to perform prefix and postfix increment (++)
+		//rational& operator++(){
+			//n_ = n_ + d_;
+			//return
+		//}
 	
 	private:
 		int_type n_; // Numerator

@@ -66,6 +66,10 @@ int main(){
 	cout << "    Must be true: " << (obj_E>=obj_F) << endl;
 	cout << "    Must be true: " << (obj_F>=obj_D) << endl << endl;
 
+	cout << "12) Test Reduced form and negative denominator" << endl;
+	cout << "    obj_C(31488,117): " << obj_C.numerator() << ", " << obj_C.denominator() << endl;
+	cout << "    obj_D(48,-4): " << obj_D.numerator() << ", " << obj_D.denominator() << endl << endl;
+
 	
 
 	return 0;
