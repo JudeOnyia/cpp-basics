@@ -70,6 +70,10 @@ int main(){
 	cout << "    obj_C(31488,117): " << obj_C.numerator() << ", " << obj_C.denominator() << endl;
 	cout << "    obj_D(48,-4): " << obj_D.numerator() << ", " << obj_D.denominator() << endl << endl;
 
+	cout << "13) Test Condition when denominator is zero" << endl;
+	ra::math::rational<double> obj_G(-9,0);
+	cout << "    obj_G(-9,0): " << obj_G.numerator() << ", " << obj_G.denominator() << endl << endl;
+
 	
 
 	return 0;

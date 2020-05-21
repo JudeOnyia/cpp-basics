@@ -16,12 +16,13 @@ class rational {
 		// Constructor to specify numerator and denominator values
 		rational(int_type n, int_type d = (int_type)1){
 			n_ = n;
-			
-			if(d == (int_type)0){
-				// ZERO CONDITION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-			}
-			else { d_ = d; }
+			d_ = d;
 
+			// Denominator must not be zero
+			if(d_ == (int_type)0){
+				n_ = std::numeric_limits<int_type>::max();
+				d_ = (int_type)1;
+			}
 			// Reduced form
 			long long the_gcd = std::__gcd((long long)n_,(long long)d_);
 			n_ = n_ / (int_type)the_gcd;
