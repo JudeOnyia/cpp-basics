@@ -116,11 +116,18 @@ class rational {
 		}
 
 		// Operator to perform postfix increment (obj++)
-		//rational operator++(int){
-			//rational<int_type> obj_copy(n_,d_);
-			//n_ = n_ + d_;
-			//return obj_copy;
-		//}
+		rational operator++(int){
+			rational<int_type> obj_copy(n_,d_);
+			n_ = n_ + d_;
+			return obj_copy;
+		}
+
+		// Operator to perform postfix decrement (obj--)
+		rational operator--(int){
+			rational<int_type> obj_copy(n_,d_);
+			n_ = n_ - d_;
+			return obj_copy;
+		}
 	
 	private:
 		int_type n_; // Numerator

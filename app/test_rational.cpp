@@ -77,7 +77,14 @@ int main(){
 	cout << "14) Test Prefix Increment(++obj) and Decrement(--obj) operators" << endl;
 	cout << "    obj_D: " << obj_D.numerator() << ", " << obj_D.denominator() << endl;
 	cout << "    increment: " << (++obj_D).numerator() << ", " << obj_D.denominator() << endl;
-	cout << "    decrement: " << (--obj_D).numerator() << ", " << obj_D.denominator() << endl;
+	cout << "    decrement: " << (--obj_D).numerator() << ", " << obj_D.denominator() << endl << endl;
+
+	cout << "15) Test Postfix Increment(obj++) and Decrement(obj--) operators" << endl;
+	cout << "    obj_D: " << obj_D.numerator() << ", " << obj_D.denominator() << endl;
+	cout << "    increment: " << (obj_D++).numerator() << ", " << obj_D.denominator() << endl;
+	cout << "    See change after: " << obj_D.numerator() << ", " << obj_D.denominator() << endl;
+	cout << "    decrement: " << (obj_D--).numerator() << ", " << obj_D.denominator() << endl;
+	cout << "    See change after: " << obj_D.numerator() << ", " << obj_D.denominator() << endl;
 	
 
 	return 0;
