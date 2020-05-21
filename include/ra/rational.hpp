@@ -56,12 +56,22 @@ class rational {
 
 		// Function to check if rational number is an integer
 		bool is_integer(){
-			return ( ((long long)n_%(long long)d_)==(long long)0 )? true : false; 
+			return ( ((long long)n_%(long long)d_)==(long long)0 ); 
 		}
 
-		// Operator to check if a rational number is zero
+		// Operator to check if a rational number is zero (!)
 		bool operator!(){
-			return (n_==(int_type)0) ? true : false;
+			return (n_==(int_type)0);
+		}
+
+		// Operator to check equality of rational numbers (==)
+		bool operator==(rational& obj){
+			return ( (n_/d_) == (obj.numerator()/obj.denominator()) );
+		}
+
+		// Operator to check inequality of rational numbers (!=)
+		bool operator!=(rational& obj){
+			return ( (n_/d_) != (obj.numerator()/obj.denominator()) );
 		}
 	
 	private:
