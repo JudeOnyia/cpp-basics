@@ -217,7 +217,6 @@ std::istream& operator>>(std::istream& inStream, rational<int_type>& obj){
 	if((std::to_string(n_l) + '/' + std::to_string(d_l))!=the_input){
 		inStream.setstate(std::ios_base::failbit);
 	}
-	inStream.exceptions(std::ios_base::failbit);
 	obj = rational<int_type>((int_type)n_l,(int_type)d_l);
 	return inStream;
 }
