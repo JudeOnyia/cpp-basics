@@ -1,1 +1,0 @@
-/home/frodo/public/ugls_lab-4.0.70/bin/c++     CMakeFiles/test_rational.dir/app/test_rational.cpp.o  -o test_rational  libra.a 
