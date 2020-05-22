@@ -1,2 +1,0 @@
-gmake: *** No rule to make target `test_random'.  Stop.
-ERROR: build failed to generate executable test_random
