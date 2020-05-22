@@ -6,6 +6,22 @@ template<class T>
 class rational {
 	public:
 		typedef T int_type;
+
+		// Function to reduce the form of the rational number
+		void reduce_form(){
+			long long the_gcd = std::__gcd((long long)n_,(long long)d_);
+			n_ = (int_type)( (long long)n_ / the_gcd ); // Also make numerator a whole number;
+			d_ = (int_type)( (long long)d_ / the_gcd ); // Also make denominator a whole number
+		}
+
+		// Function to Prevent denominator from having zero or negative value
+		void denominator_handle(){
+			if(d_ == (int_type)0){
+				n_ = std::numeric_limits<int_type>::max();
+				d_ = (int_type)1;
+			}
+			if(d_ < (int_type)0) { d_ = d_ * (int_type)(-1); n_ = n_ * (int_type)(-1); }
+		}
 		
 		// Default constructor sets rational number to 0
 		rational(){
@@ -17,44 +33,43 @@ class rational {
 		rational(int_type n, int_type d = (int_type)1){
 			n_ = n;
 			d_ = d;
-
-			// Denominator must not be zero
-			if(d_ == (int_type)0){
-				n_ = std::numeric_limits<int_type>::max();
-				d_ = (int_type)1;
-			}
-			// Reduced form
-			long long the_gcd = std::__gcd((long long)n_,(long long)d_);
-			n_ = n_ / (int_type)the_gcd;
-			d_ = d_ / (int_type)the_gcd;
-			// If denominator is negative
-			if(d_ < (int_type)0) { d_ = d_ * (int_type)(-1); n_ = n_ * (int_type)(-1); }
+			reduce_form();
+			denominator_handle();
 		}
 
-		int_type numerator(){ return n_; } // Function to return the numerator value
-		int_type denominator(){ return d_; } // Function to return the denominator value
+		int_type numerator() const { return n_; } // Function to return the numerator value
+		int_type denominator() const { return d_; } // Function to return the denominator value
 
 		// Operator for compound addition (+=)
 		rational& operator+=(const rational& obj){
-			// FIGURE OUT THE MATH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			n_ = (n_ * obj.denominator()) + (obj.numerator() * d_);
+			d_ = d_ * obj.denominator();
+			reduce_form();
 			return *this;
 		}
 
 		// Operator for compound subtraction (-=)
 		rational& operator-=(const rational& obj){
-			// FIGURE OUT THE MATH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			n_ = (n_ * obj.denominator()) - (obj.numerator() * d_);
+			d_ = d_ * obj.denominator();
+			reduce_form();
 			return *this;
 		}
 
 		// Operator for compound multiplication (*=)
 		rational& operator*=(const rational& obj){
-			// FIGURE OUT THE MATH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			n_ = n_ * obj.numerator();
+			d_ = d_ * obj.denominator();
+			reduce_form();
 			return *this;
 		}
 
 		// Operator for compound division (/=)
 		rational& operator/=(const rational& obj){
-			// FIGURE OUT THE MATH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			n_ = n_ * obj.denominator();
+			d_ = d_ * obj.numerator();
+			reduce_form();
+			denominator_handle();
 			return *this;
 		}
 
@@ -74,32 +89,32 @@ class rational {
 		}
 
 		// Operator to check equality of rational numbers (==)
-		bool operator==(rational& obj){
+		bool operator==(const rational& obj){
 			return ( (n_/d_) == (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check inequality of rational numbers (!=)
-		bool operator!=(rational& obj){
+		bool operator!=(const rational& obj){
 			return ( (n_/d_) != (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check less than of rational numbers (<)
-		bool operator<(rational& obj){
+		bool operator<(const rational& obj){
 			return ( (n_/d_) < (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check greater than of rational numbers (>)
-		bool operator>(rational& obj){
+		bool operator>(const rational& obj){
 			return ( (n_/d_) > (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check less than or equals to of rational numbers (<=)
-		bool operator<=(rational& obj){
+		bool operator<=(const rational& obj){
 			return ( (n_/d_) <= (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check greater than or equals to of rational numbers (>=)
-		bool operator>=(rational& obj){
+		bool operator>=(const rational& obj){
 			return ( (n_/d_) >= (obj.numerator()/obj.denominator()) );
 		}
 

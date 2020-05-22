@@ -70,8 +70,8 @@ int main(){
 	cout << "    obj_C(31488,117): " << obj_C.numerator() << ", " << obj_C.denominator() << endl;
 	cout << "    obj_D(48,-4): " << obj_D.numerator() << ", " << obj_D.denominator() << endl << endl;
 
-	cout << "13) Test Condition when denominator is zero" << endl;
 	ra::math::rational<double> obj_G(-9,0);
+	cout << "13) Test Condition when denominator is zero" << endl;
 	cout << "    obj_G(-9,0): " << obj_G.numerator() << ", " << obj_G.denominator() << endl << endl;
 
 	cout << "14) Test Prefix Increment(++obj) and Decrement(--obj) operators" << endl;
@@ -84,7 +84,20 @@ int main(){
 	cout << "    increment: " << (obj_D++).numerator() << ", " << obj_D.denominator() << endl;
 	cout << "    See change after: " << obj_D.numerator() << ", " << obj_D.denominator() << endl;
 	cout << "    decrement: " << (obj_D--).numerator() << ", " << obj_D.denominator() << endl;
-	cout << "    See change after: " << obj_D.numerator() << ", " << obj_D.denominator() << endl;
+	cout << "    See change after: " << obj_D.numerator() << ", " << obj_D.denominator() << endl << endl;
+	
+	ra::math::rational<double> obj_H(-9.776,1.33);
+	cout << "16) Test case where a decimal points is used for the numerator and denominator " << endl;
+	cout << "    obj_H: " << obj_H.numerator() << ", " << obj_H.denominator() << endl << endl;
+	
+	ra::math::rational<float> obj_I(8,10);
+	ra::math::rational<float> obj_J(1,5);
+	ra::math::rational<float> obj_K(2,3);
+	cout << "17) Test Operator(+=) and (-=) and (*=) and (/=)" << endl;
+	cout << "    (8/10) += (1/5): " << (obj_I+=obj_J).numerator() << "/" << obj_I.denominator() << endl;
+	cout << "    (prev ans) -= (2/3): " << (obj_I-=obj_K).numerator() << "/" << obj_I.denominator() << endl;
+	cout << "    (prev ans) *= (2/3): " << (obj_I*=obj_K).numerator() << "/" << obj_I.denominator() << endl;
+	cout << "    (prev ans) /= (1/5): " << (obj_I/=obj_J).numerator() << "/" << obj_I.denominator() << endl;
 	
 
 	return 0;
