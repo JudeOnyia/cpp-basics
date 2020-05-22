@@ -1,6 +1,9 @@
 #ifndef rational_hpp
 #define rational_hpp
+#include <iostream>
 #include <algorithm>
+#include <string>
+#include <sstream>
 namespace ra::math{
 template<class T>
 class rational {
@@ -191,6 +194,32 @@ rational<int_type> operator/(const rational<int_type>& obj_A, const rational<int
 	int_type n_result = obj_A.numerator() * obj_B.denominator();
 	int_type d_result = obj_A.denominator() * obj_B.numerator();
 	return rational<int_type>(n_result,d_result);
+}
+
+// Stream Inserter
+template<class int_type>
+std::ostream& operator<<(std::ostream& outStream, const rational<int_type>& obj){
+	outStream << obj.numerator() << "/" << obj.denominator();
+	return outStream;
+}
+
+// Stream Extractor
+template<class int_type>
+std::istream& operator>>(std::istream& inStream, rational<int_type>& obj){
+	std::string the_input;
+	std::getline(inStream,the_input);
+	std::istringstream iss(the_input);
+	std::string n, d;
+	std::getline(iss,n,'/');
+	std::getline(iss,d);
+	long long n_l = std::stoll(n);
+	long long d_l = std::stoll(d);
+	if((std::to_string(n_l) + '/' + std::to_string(d_l))!=the_input){
+		inStream.setstate(std::ios_base::failbit);
+	}
+	inStream.exceptions(std::ios_base::failbit);
+	obj = rational<int_type>((int_type)n_l,(int_type)d_l);
+	return inStream;
 }
 
 

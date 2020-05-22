@@ -1,6 +1,9 @@
 #include "ra/rational.hpp"
 #include <iostream>
 
+#include <string>
+#include <sstream>
+
 int main(){
 	using std::cout;
 	using std::endl;
@@ -105,14 +108,14 @@ int main(){
 	cout << "    Unary Minus: " << (-obj_H).numerator() << "/" << obj_H.denominator() << endl;
 
 	cout << "19) Test Binary operators (+), (-), (*), and (/)" << endl;
-	cout <<"     "<<obj_I.numerator()<<"/"<<obj_I.denominator()<<" + "<<obj_J.numerator()<<"/"<<obj_J.denominator();
-	cout << " = " <<(obj_I+obj_J).numerator()<<"/"<<(obj_I+obj_J).denominator()<<endl;
-	cout <<"     "<<obj_I.numerator()<<"/"<<obj_I.denominator()<<" - "<<obj_J.numerator()<<"/"<<obj_J.denominator();
-	cout << " = " <<(obj_I-obj_J).numerator()<<"/"<<(obj_I-obj_J).denominator()<<endl;
-	cout <<"     "<<obj_I.numerator()<<"/"<<obj_I.denominator()<<" * "<<obj_J.numerator()<<"/"<<obj_J.denominator();
-	cout << " = " <<(obj_I*obj_J).numerator()<<"/"<<(obj_I*obj_J).denominator()<<endl;
-	cout <<"     "<<obj_I.numerator()<<"/"<<obj_I.denominator()<<" / "<<obj_J.numerator()<<"/"<<obj_J.denominator();
-	cout << " = " <<(obj_I/obj_J).numerator()<<"/"<<(obj_I/obj_J).denominator()<<endl;
+	cout <<"     "<<obj_I<<" + "<<obj_J<< " = " <<(obj_I+obj_J)<<endl;
+	cout <<"     "<<obj_I<<" - "<<obj_J<< " = " <<(obj_I-obj_J)<<endl;
+	cout <<"     "<<obj_I<<" * "<<obj_J<< " = " <<(obj_I*obj_J)<<endl;
+	cout <<"     "<<obj_I<<" / "<<obj_J<< " = " <<(obj_I/obj_J)<<endl<<endl;
+
+	cout << "20) Test Stream extractor" << endl;
+	std::cin >> obj_K;
+	cout << obj_K << endl;
 	
 	
 	
