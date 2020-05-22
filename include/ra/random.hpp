@@ -29,12 +29,12 @@ namespace ra::random{
 		const int_type max() const { return m_-(int_type)1; } // Funtion to get the largest value in sequence
 		
 		// Operator to test two linear_congruential_generator objects for equality
-		bool operator==(const linear_congruential_generator& obj){
+		bool operator==(const linear_congruential_generator& obj) const {
 			return (a_==obj.multiplier() && c_==obj.increment()  && m_==obj.modulus()  && x_==obj.position());
 		}
 
 		// Operator to test two linear_congruential_generator objects for inequality
-		bool operator!=(const linear_congruential_generator& obj){
+		bool operator!=(const linear_congruential_generator& obj) const {
 		        return !(a_==obj.multiplier() && c_==obj.increment()  && m_==obj.modulus()  && x_==obj.position());
 		}
 
