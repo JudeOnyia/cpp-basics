@@ -1,0 +1,2 @@
+gmake: *** No rule to make target `test_rational'.  Stop.
+ERROR: build failed to generate executable test_rational

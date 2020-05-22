@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-random_sane/source/include/ra/random.hpp
+iostream
+-
+
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-random_sane/source/lib/random.cpp
+iostream
+-
+ra/random.hpp
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-random_sane/source/lib/ra/random.hpp
+

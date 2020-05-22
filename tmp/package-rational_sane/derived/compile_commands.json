@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived",
+  "command": "/home/frodo/public/ugls_lab-4.0.70/bin/c++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include    -pedantic-errors -std=gnu++17 -o CMakeFiles/test_rational.dir/app/test_rational.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp",
+  "file": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp"
+},
+{
+  "directory": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived",
+  "command": "/home/frodo/public/ugls_lab-4.0.70/bin/c++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include    -pedantic-errors -std=gnu++17 -o CMakeFiles/test_random.dir/app/test_random.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_random.cpp",
+  "file": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_random.cpp"
+},
+{
+  "directory": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived",
+  "command": "/home/frodo/public/ugls_lab-4.0.70/bin/c++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include    -pedantic-errors -std=gnu++17 -o CMakeFiles/ra.dir/lib/random.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/lib/random.cpp",
+  "file": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/lib/random.cpp"
+}
+]

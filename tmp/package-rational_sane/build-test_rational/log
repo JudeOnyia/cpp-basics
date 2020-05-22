@@ -1,0 +1,300 @@
+/home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -S/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source -B/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/gmake  -f CMakeFiles/Makefile2 test_rational
+gmake[1]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+/home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -S/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source -B/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived --check-build-system CMakeFiles/Makefile.cmake 0
+/home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -E cmake_progress_start /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived/CMakeFiles 4
+/usr/bin/gmake  -f CMakeFiles/Makefile2 CMakeFiles/test_rational.dir/all
+gmake[2]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+/usr/bin/gmake  -f CMakeFiles/ra.dir/build.make CMakeFiles/ra.dir/depend
+gmake[3]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+cd /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived && /home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -E cmake_depends "Unix Makefiles" /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived/CMakeFiles/ra.dir/DependInfo.cmake --color=
+Scanning dependencies of target ra
+gmake[3]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+/usr/bin/gmake  -f CMakeFiles/ra.dir/build.make CMakeFiles/ra.dir/build
+gmake[3]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+[ 25%] Building CXX object CMakeFiles/ra.dir/lib/random.cpp.o
+/home/frodo/public/ugls_lab-4.0.70/bin/c++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include  -pedantic-errors -std=gnu++17 -o CMakeFiles/ra.dir/lib/random.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/lib/random.cpp
+[ 50%] Linking CXX static library libra.a
+/home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -P CMakeFiles/ra.dir/cmake_clean_target.cmake
+/home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -E cmake_link_script CMakeFiles/ra.dir/link.txt --verbose=1
+/usr/bin/ar qc libra.a  CMakeFiles/ra.dir/lib/random.cpp.o
+/usr/bin/ranlib libra.a
+gmake[3]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+[ 50%] Built target ra
+/usr/bin/gmake  -f CMakeFiles/test_rational.dir/build.make CMakeFiles/test_rational.dir/depend
+gmake[3]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+cd /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived && /home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -E cmake_depends "Unix Makefiles" /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived/CMakeFiles/test_rational.dir/DependInfo.cmake --color=
+Scanning dependencies of target test_rational
+gmake[3]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+/usr/bin/gmake  -f CMakeFiles/test_rational.dir/build.make CMakeFiles/test_rational.dir/build
+gmake[3]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+[ 75%] Building CXX object CMakeFiles/test_rational.dir/app/test_rational.cpp.o
+/home/frodo/public/ugls_lab-4.0.70/bin/c++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include  -pedantic-errors -std=gnu++17 -o CMakeFiles/test_rational.dir/app/test_rational.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp: In instantiation of ‘void do_test() [with T = short int]’:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:86:21:   required from here
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:35:3: error: passing ‘const ra::math::rational<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   35 |   c.truncate();
+      |   ^
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:80:12: note:   in call to ‘ra::math::rational<T>::int_type ra::math::rational<T>::truncate() [with T = short int; ra::math::rational<T>::int_type = short int]’
+   80 |   int_type truncate(){
+      |            ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:36:3: error: passing ‘const ra::math::rational<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   36 |   c.is_integer();
+      |   ^
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:85:8: note:   in call to ‘bool ra::math::rational<T>::is_integer() [with T = short int]’
+   85 |   bool is_integer(){
+      |        ^~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:37:3: error: passing ‘const ra::math::rational<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   37 |   !c;
+      |   ^~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:90:8: note:   in call to ‘bool ra::math::rational<T>::operator!() [with T = short int]’
+   90 |   bool operator!(){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:38:5: error: passing ‘const ra::math::rational<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   38 |   c == c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:95:8: note:   in call to ‘bool ra::math::rational<T>::operator==(const ra::math::rational<T>&) [with T = short int]’
+   95 |   bool operator==(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:39:5: error: passing ‘const ra::math::rational<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   39 |   c != c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:100:8: note:   in call to ‘bool ra::math::rational<T>::operator!=(const ra::math::rational<T>&) [with T = short int]’
+  100 |   bool operator!=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:40:5: error: passing ‘const ra::math::rational<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   40 |   c < c;
+      |   ~~^~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:105:8: note:   in call to ‘bool ra::math::rational<T>::operator<(const ra::math::rational<T>&) [with T = short int]’
+  105 |   bool operator<(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:41:5: error: passing ‘const ra::math::rational<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   41 |   c > c;
+      |   ~~^~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:110:8: note:   in call to ‘bool ra::math::rational<T>::operator>(const ra::math::rational<T>&) [with T = short int]’
+  110 |   bool operator>(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:42:5: error: passing ‘const ra::math::rational<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   42 |   c <= c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:115:8: note:   in call to ‘bool ra::math::rational<T>::operator<=(const ra::math::rational<T>&) [with T = short int]’
+  115 |   bool operator<=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:43:5: error: passing ‘const ra::math::rational<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   43 |   c >= c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:120:8: note:   in call to ‘bool ra::math::rational<T>::operator>=(const ra::math::rational<T>&) [with T = short int]’
+  120 |   bool operator>=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp: In instantiation of ‘void do_test() [with T = int]’:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:87:15:   required from here
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:35:3: error: passing ‘const ra::math::rational<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   35 |   c.truncate();
+      |   ^
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:80:12: note:   in call to ‘ra::math::rational<T>::int_type ra::math::rational<T>::truncate() [with T = int; ra::math::rational<T>::int_type = int]’
+   80 |   int_type truncate(){
+      |            ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:36:3: error: passing ‘const ra::math::rational<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   36 |   c.is_integer();
+      |   ^
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:85:8: note:   in call to ‘bool ra::math::rational<T>::is_integer() [with T = int]’
+   85 |   bool is_integer(){
+      |        ^~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:37:3: error: passing ‘const ra::math::rational<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   37 |   !c;
+      |   ^~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:90:8: note:   in call to ‘bool ra::math::rational<T>::operator!() [with T = int]’
+   90 |   bool operator!(){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:38:5: error: passing ‘const ra::math::rational<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   38 |   c == c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:95:8: note:   in call to ‘bool ra::math::rational<T>::operator==(const ra::math::rational<T>&) [with T = int]’
+   95 |   bool operator==(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:39:5: error: passing ‘const ra::math::rational<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   39 |   c != c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:100:8: note:   in call to ‘bool ra::math::rational<T>::operator!=(const ra::math::rational<T>&) [with T = int]’
+  100 |   bool operator!=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:40:5: error: passing ‘const ra::math::rational<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   40 |   c < c;
+      |   ~~^~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:105:8: note:   in call to ‘bool ra::math::rational<T>::operator<(const ra::math::rational<T>&) [with T = int]’
+  105 |   bool operator<(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:41:5: error: passing ‘const ra::math::rational<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   41 |   c > c;
+      |   ~~^~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:110:8: note:   in call to ‘bool ra::math::rational<T>::operator>(const ra::math::rational<T>&) [with T = int]’
+  110 |   bool operator>(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:42:5: error: passing ‘const ra::math::rational<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   42 |   c <= c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:115:8: note:   in call to ‘bool ra::math::rational<T>::operator<=(const ra::math::rational<T>&) [with T = int]’
+  115 |   bool operator<=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:43:5: error: passing ‘const ra::math::rational<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   43 |   c >= c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:120:8: note:   in call to ‘bool ra::math::rational<T>::operator>=(const ra::math::rational<T>&) [with T = int]’
+  120 |   bool operator>=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp: In instantiation of ‘void do_test() [with T = long int]’:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:88:16:   required from here
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:35:3: error: passing ‘const ra::math::rational<long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   35 |   c.truncate();
+      |   ^
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:80:12: note:   in call to ‘ra::math::rational<T>::int_type ra::math::rational<T>::truncate() [with T = long int; ra::math::rational<T>::int_type = long int]’
+   80 |   int_type truncate(){
+      |            ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:36:3: error: passing ‘const ra::math::rational<long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   36 |   c.is_integer();
+      |   ^
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:85:8: note:   in call to ‘bool ra::math::rational<T>::is_integer() [with T = long int]’
+   85 |   bool is_integer(){
+      |        ^~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:37:3: error: passing ‘const ra::math::rational<long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   37 |   !c;
+      |   ^~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:90:8: note:   in call to ‘bool ra::math::rational<T>::operator!() [with T = long int]’
+   90 |   bool operator!(){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:38:5: error: passing ‘const ra::math::rational<long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   38 |   c == c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:95:8: note:   in call to ‘bool ra::math::rational<T>::operator==(const ra::math::rational<T>&) [with T = long int]’
+   95 |   bool operator==(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:39:5: error: passing ‘const ra::math::rational<long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   39 |   c != c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:100:8: note:   in call to ‘bool ra::math::rational<T>::operator!=(const ra::math::rational<T>&) [with T = long int]’
+  100 |   bool operator!=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:40:5: error: passing ‘const ra::math::rational<long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   40 |   c < c;
+      |   ~~^~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:105:8: note:   in call to ‘bool ra::math::rational<T>::operator<(const ra::math::rational<T>&) [with T = long int]’
+  105 |   bool operator<(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:41:5: error: passing ‘const ra::math::rational<long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   41 |   c > c;
+      |   ~~^~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:110:8: note:   in call to ‘bool ra::math::rational<T>::operator>(const ra::math::rational<T>&) [with T = long int]’
+  110 |   bool operator>(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:42:5: error: passing ‘const ra::math::rational<long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   42 |   c <= c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:115:8: note:   in call to ‘bool ra::math::rational<T>::operator<=(const ra::math::rational<T>&) [with T = long int]’
+  115 |   bool operator<=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:43:5: error: passing ‘const ra::math::rational<long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   43 |   c >= c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:120:8: note:   in call to ‘bool ra::math::rational<T>::operator>=(const ra::math::rational<T>&) [with T = long int]’
+  120 |   bool operator>=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp: In instantiation of ‘void do_test() [with T = long long int]’:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:89:21:   required from here
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:35:3: error: passing ‘const ra::math::rational<long long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   35 |   c.truncate();
+      |   ^
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:80:12: note:   in call to ‘ra::math::rational<T>::int_type ra::math::rational<T>::truncate() [with T = long long int; ra::math::rational<T>::int_type = long long int]’
+   80 |   int_type truncate(){
+      |            ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:36:3: error: passing ‘const ra::math::rational<long long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   36 |   c.is_integer();
+      |   ^
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:85:8: note:   in call to ‘bool ra::math::rational<T>::is_integer() [with T = long long int]’
+   85 |   bool is_integer(){
+      |        ^~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:37:3: error: passing ‘const ra::math::rational<long long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   37 |   !c;
+      |   ^~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:90:8: note:   in call to ‘bool ra::math::rational<T>::operator!() [with T = long long int]’
+   90 |   bool operator!(){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:38:5: error: passing ‘const ra::math::rational<long long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   38 |   c == c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:95:8: note:   in call to ‘bool ra::math::rational<T>::operator==(const ra::math::rational<T>&) [with T = long long int]’
+   95 |   bool operator==(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:39:5: error: passing ‘const ra::math::rational<long long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   39 |   c != c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:100:8: note:   in call to ‘bool ra::math::rational<T>::operator!=(const ra::math::rational<T>&) [with T = long long int]’
+  100 |   bool operator!=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:40:5: error: passing ‘const ra::math::rational<long long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   40 |   c < c;
+      |   ~~^~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:105:8: note:   in call to ‘bool ra::math::rational<T>::operator<(const ra::math::rational<T>&) [with T = long long int]’
+  105 |   bool operator<(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:41:5: error: passing ‘const ra::math::rational<long long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   41 |   c > c;
+      |   ~~^~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:110:8: note:   in call to ‘bool ra::math::rational<T>::operator>(const ra::math::rational<T>&) [with T = long long int]’
+  110 |   bool operator>(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:42:5: error: passing ‘const ra::math::rational<long long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   42 |   c <= c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:115:8: note:   in call to ‘bool ra::math::rational<T>::operator<=(const ra::math::rational<T>&) [with T = long long int]’
+  115 |   bool operator<=(const rational& obj){
+      |        ^~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:43:5: error: passing ‘const ra::math::rational<long long int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+   43 |   c >= c;
+      |   ~~^~~~
+In file included from /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/app/test_rational.cpp:2:
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/source/include/ra/rational.hpp:120:8: note:   in call to ‘bool ra::math::rational<T>::operator>=(const ra::math::rational<T>&) [with T = long long int]’
+  120 |   bool operator>=(const rational& obj){
+      |        ^~~~~~~~
+gmake[3]: *** [CMakeFiles/test_rational.dir/app/test_rational.cpp.o] Error 1
+gmake[3]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+gmake[2]: *** [CMakeFiles/test_rational.dir/all] Error 2
+gmake[2]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+gmake[1]: *** [CMakeFiles/test_rational.dir/rule] Error 2
+gmake[1]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/cpp_basics-JudeOnyia/tmp/package-rational_sane/derived'
+gmake: *** [test_rational] Error 2
+ERROR: build failed to generate executable test_rational
