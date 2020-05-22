@@ -40,8 +40,8 @@ class rational {
 			denominator_handle();
 		}
 
-		int_type numerator() const { return n_; } // Function to return the numerator value
-		int_type denominator() const { return d_; } // Function to return the denominator value
+		const int_type numerator() const { return n_; } // Function to return the numerator value
+		const int_type denominator() const { return d_; } // Function to return the denominator value
 
 		// Operator for compound addition (+=)
 		rational& operator+=(const rational& obj){
