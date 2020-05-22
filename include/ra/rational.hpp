@@ -77,7 +77,7 @@ class rational {
 		}
 
 		// Function for rounding the rational number towards zero (discard fractional part)
-		const int_type truncate const (){
+		const int_type truncate() const {
 			return (int_type)((long long)(n_ / d_));
 		}
 
