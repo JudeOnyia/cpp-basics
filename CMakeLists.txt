@@ -8,5 +8,5 @@ project(random_and_rational LANGUAGES CXX)
 include_directories(include)
 
 # Add Executable Program
-add_executable(random app/test_random_2.cpp lib/random.cpp)
-add_executable(rational app/test_rational_2.cpp)
+add_executable(random app/test_random.cpp lib/random.cpp)
+add_executable(rational app/test_rational.cpp)
