@@ -77,47 +77,47 @@ class rational {
 		}
 
 		// Function for rounding the rational number towards zero (discard fractional part)
-		int_type truncate(){
+		const int_type truncate const (){
 			return (int_type)((long long)(n_ / d_));
 		}
 
 		// Function to check if rational number is an integer
-		bool is_integer(){
+		bool is_integer() const {
 			return ( d_==(int_type)1 ); 
 		}
 
 		// Operator to check if a rational number is zero (!)
-		bool operator!(){
+		bool operator!() const {
 			return (n_==(int_type)0);
 		}
 
 		// Operator to check equality of rational numbers (==)
-		bool operator==(const rational& obj){
+		bool operator==(const rational& obj) const {
 			return ( (n_/d_) == (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check inequality of rational numbers (!=)
-		bool operator!=(const rational& obj){
+		bool operator!=(const rational& obj) const {
 			return ( (n_/d_) != (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check less than of rational numbers (<)
-		bool operator<(const rational& obj){
+		bool operator<(const rational& obj) const {
 			return ( (n_/d_) < (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check greater than of rational numbers (>)
-		bool operator>(const rational& obj){
+		bool operator>(const rational& obj) const {
 			return ( (n_/d_) > (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check less than or equals to of rational numbers (<=)
-		bool operator<=(const rational& obj){
+		bool operator<=(const rational& obj) const {
 			return ( (n_/d_) <= (obj.numerator()/obj.denominator()) );
 		}
 
 		// Operator to check greater than or equals to of rational numbers (>=)
-		bool operator>=(const rational& obj){
+		bool operator>=(const rational& obj) const {
 			return ( (n_/d_) >= (obj.numerator()/obj.denominator()) );
 		}
 
