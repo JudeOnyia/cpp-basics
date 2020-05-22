@@ -103,6 +103,18 @@ int main(){
 	cout << "    obj_H: " << obj_H.numerator() << ", " << obj_H.denominator() << endl;
 	cout << "    Unary Plus: " << (+obj_H).numerator() << "/" << obj_H.denominator() << endl;
 	cout << "    Unary Minus: " << (-obj_H).numerator() << "/" << obj_H.denominator() << endl;
+
+	cout << "19) Test Binary operators (+), (-), (*), and (/)" << endl;
+	cout <<"     "<<obj_I.numerator()<<"/"<<obj_I.denominator()<<" + "<<obj_J.numerator()<<"/"<<obj_J.denominator();
+	cout << " = " <<(obj_I+obj_J).numerator()<<"/"<<(obj_I+obj_J).denominator()<<endl;
+	cout <<"     "<<obj_I.numerator()<<"/"<<obj_I.denominator()<<" - "<<obj_J.numerator()<<"/"<<obj_J.denominator();
+	cout << " = " <<(obj_I-obj_J).numerator()<<"/"<<(obj_I-obj_J).denominator()<<endl;
+	cout <<"     "<<obj_I.numerator()<<"/"<<obj_I.denominator()<<" * "<<obj_J.numerator()<<"/"<<obj_J.denominator();
+	cout << " = " <<(obj_I*obj_J).numerator()<<"/"<<(obj_I*obj_J).denominator()<<endl;
+	cout <<"     "<<obj_I.numerator()<<"/"<<obj_I.denominator()<<" / "<<obj_J.numerator()<<"/"<<obj_J.denominator();
+	cout << " = " <<(obj_I/obj_J).numerator()<<"/"<<(obj_I/obj_J).denominator()<<endl;
+	
+	
 	
 
 	return 0;

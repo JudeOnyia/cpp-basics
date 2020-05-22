@@ -161,6 +161,38 @@ rational<int_type> operator-(const rational<int_type>& obj){
 	return rational<int_type>(-(obj.numerator()),obj.denominator());
 }
 
+// Operator to perform Binary addition (+)
+template<class int_type>
+rational<int_type> operator+(const rational<int_type>& obj_A, const rational<int_type>& obj_B){
+	int_type n_result = (obj_A.numerator() * obj_B.denominator()) + (obj_A.denominator() * obj_B.numerator());
+	int_type d_result = obj_A.denominator() * obj_B.denominator();
+	return rational<int_type>(n_result,d_result);
+}
+
+// Operator to perform Binary subtraction (-)
+template<class int_type>
+rational<int_type> operator-(const rational<int_type>& obj_A, const rational<int_type>& obj_B){
+	int_type n_result = (obj_A.numerator() * obj_B.denominator()) - (obj_A.denominator() * obj_B.numerator());
+	int_type d_result = obj_A.denominator() * obj_B.denominator();
+	return rational<int_type>(n_result,d_result);
+}
+
+// Operator to perform Binary multiplication (*)
+template<class int_type>
+rational<int_type> operator*(const rational<int_type>& obj_A, const rational<int_type>& obj_B){
+	int_type n_result = obj_A.numerator() * obj_B.numerator();
+	int_type d_result = obj_A.denominator() * obj_B.denominator();
+	return rational<int_type>(n_result,d_result);
+}
+
+// Operator to perform Binary division (/)
+template<class int_type>
+rational<int_type> operator/(const rational<int_type>& obj_A, const rational<int_type>& obj_B){
+	int_type n_result = obj_A.numerator() * obj_B.denominator();
+	int_type d_result = obj_A.denominator() * obj_B.numerator();
+	return rational<int_type>(n_result,d_result);
+}
+
 
 
 }
