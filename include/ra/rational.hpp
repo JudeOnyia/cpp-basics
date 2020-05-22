@@ -149,7 +149,17 @@ class rational {
 		int_type d_; // Denominator
 };
 
+// Operator to perform Unary plus (+)
+template<class int_type>
+rational<int_type> operator+(const rational<int_type>& obj){
+	return rational<int_type>(+(obj.numerator()),obj.denominator());
+}
 
+// Operator to perform Unary minus (-)
+template<class int_type>
+rational<int_type> operator-(const rational<int_type>& obj){
+	return rational<int_type>(-(obj.numerator()),obj.denominator());
+}
 
 
 

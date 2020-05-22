@@ -97,7 +97,12 @@ int main(){
 	cout << "    (8/10) += (1/5): " << (obj_I+=obj_J).numerator() << "/" << obj_I.denominator() << endl;
 	cout << "    (prev ans) -= (2/3): " << (obj_I-=obj_K).numerator() << "/" << obj_I.denominator() << endl;
 	cout << "    (prev ans) *= (2/3): " << (obj_I*=obj_K).numerator() << "/" << obj_I.denominator() << endl;
-	cout << "    (prev ans) /= (1/5): " << (obj_I/=obj_J).numerator() << "/" << obj_I.denominator() << endl;
+	cout << "    (prev ans) /= (1/5): " << (obj_I/=obj_J).numerator() << "/" << obj_I.denominator() << endl << endl;
+
+	cout << "18) Test Unary minus(-) and Unary plus(+)" << endl;
+	cout << "    obj_H: " << obj_H.numerator() << ", " << obj_H.denominator() << endl;
+	cout << "    Unary Plus: " << (+obj_H).numerator() << "/" << obj_H.denominator() << endl;
+	cout << "    Unary Minus: " << (-obj_H).numerator() << "/" << obj_H.denominator() << endl;
 	
 
 	return 0;
