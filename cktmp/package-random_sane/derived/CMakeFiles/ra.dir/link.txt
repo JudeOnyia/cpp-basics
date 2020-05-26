@@ -1,0 +1,2 @@
+/usr/bin/ar qc libra.a  CMakeFiles/ra.dir/lib/random.cpp.o
+/usr/bin/ranlib libra.a
