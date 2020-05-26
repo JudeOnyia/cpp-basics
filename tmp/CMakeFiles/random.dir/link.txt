@@ -1,0 +1,1 @@
+/home/frodo/public/ugls_lab-4.0.70/bin/c++    -rdynamic CMakeFiles/random.dir/app/test_random.cpp.o CMakeFiles/random.dir/lib/random.cpp.o  -o random 

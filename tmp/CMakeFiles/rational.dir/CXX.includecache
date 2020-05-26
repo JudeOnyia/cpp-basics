@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/ra/rational.hpp
+iostream
+-
+algorithm
+-
+string
+-
+sstream
+-
+
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/Trial/cpp_basics-JudeOnyia/app/test_rational.cpp
+ra/rational.hpp
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/Trial/cpp_basics-JudeOnyia/app/ra/rational.hpp
+iostream
+-
+string
+-
+sstream
+-
+
