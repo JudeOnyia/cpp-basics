@@ -1,4 +1,0 @@
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/Trial/cpp_basics-JudeOnyia/tmp/CMakeFiles/rebuild_cache.dir
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/Trial/cpp_basics-JudeOnyia/tmp/CMakeFiles/edit_cache.dir
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/Trial/cpp_basics-JudeOnyia/tmp/CMakeFiles/rational.dir
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_1/Trial/cpp_basics-JudeOnyia/tmp/CMakeFiles/random.dir
